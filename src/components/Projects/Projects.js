@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import imgtotext from "../../Assets/Projects/imgtotext.png";
-
+import budget from "../../Assets/Projects/budget.jpg"
 import editor from "../../Assets/Projects/onlineeditor.png";
 import course from "../../Assets/Projects/course.jpg"
 
@@ -29,6 +29,16 @@ function Projects() {
               title="Course Management System"
               description="The Java-based Course Management System employs a full-stack approach with MySQL. It enables administrators to manage courses, enrollments, and grades seamlessly. Leveraging Java's backend logic and MySQL for database storage, the system ensures efficient organization and accessibility of educational data, enhancing the overall course management process"
               ghLink="https://github.com/PolareddyHemaLatha/Course-Management-System"
+              
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={budget}
+              isBlog={false}
+              title="Budget Tracker"
+              description="The Budget Tracker project, implemented in React, empowers users to manage finances efficiently. With dynamic UI components, it tracks income, expenses, and balances in real-time, providing a user-friendly experience for budget planning and financial management."
+              ghLink="https://github.com/PolareddyHemaLatha/Budget-Tracker"
               
             />
           </Col>
@@ -70,6 +80,10 @@ function Projects() {
 
          
         </Row>
+        <p style={{ color: "white",  fontSize:"25px" }}>
+        `Innovating Continuously, Juggling Projects with Precision. `
+        </p>
+        
       </Container>
     </Container>
   );
